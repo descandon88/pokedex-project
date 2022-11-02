@@ -1,0 +1,52 @@
+
+.container {
+    background-color: #74CB48;
+    max-width: 500px;
+    height: 844px;
+    border-radius: 25px;
+    margin: 0px auto 0 auto;
+}
+
+header {
+    height: 270px;
+    border-radius: 25px;
+}
+
+.pokebola {
+    filter: invert(10) brightness(1.2);
+    opacity: 20%;
+    position: absolute;
+    margin-top: -70px;
+    width: 250px;
+}
+
+.arrowLeft {
+    filter: invert(10) brightness(1.2);
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 25px 0px 25px; 
+
+}
+
+.h1Header {
+    font-size: 32px;
+    margin-right: 100px;
+    color: white;
+}
+
+.h2Header {
+    font-size: 14px;
+    color: white;
+}
+
+main {
+    height: 66%;
+    background-color: white;
+    margin: 8px;
+    margin-bottom: 55px;
+    border-radius: 25px;
+}
