@@ -1,7 +1,7 @@
 
 .container {
     background-color: #74CB48;
-    max-width: 500px;
+    max-width: 390px;
     height: 844px;
     border-radius: 25px;
     margin: 0px auto 0 auto;
@@ -17,6 +17,7 @@ header {
     opacity: 20%;
     position: absolute;
     margin-top: -70px;
+    margin-left: -66px;
     width: 250px;
 }
 
@@ -43,10 +44,44 @@ header {
     color: white;
 }
 
+.frame {
+}
+
 main {
     height: 66%;
     background-color: white;
     margin: 8px;
     margin-bottom: 55px;
     border-radius: 25px;
+}
+
+.bulbasaur {
+    margin-top: -180px;
+    width: 250px;
+    position: absolute;
+    margin-left: -130px;
+}
+
+button {
+    margin: 70px 10px 0px 10px;
+}
+
+.verde {
+    background-color: #74CB48;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 3px 10px;
+}
+
+.violeta {
+    background-color: #A43E9E;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 3px 10px;
+}
+
+main p {
+    color: #74CB48;
+    font-weight: 700;
+    font-size: 22px;
 }
