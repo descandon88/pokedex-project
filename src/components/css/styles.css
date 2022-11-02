@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+:root {
+    --Rock: #869E31;
+    --Ghost: #70559B;
+    --Steel: #B7B9D0;
+    --Water: #6493EB;
+    --Grass: #74CB48;
+    --Psychic: #FB5584;
+    --Ice: #9AD6DF;
+    --Dark: #75574C;
+    --Fairy: #E69EAC;
+    --Normal: #AAA67F;
+    --Fighting: #C12239;
+    --Flying: #A891EC;
+    --Poison: #A43E9E;
+    --Ground: #DEC16B;
+    --Bug: #A78723;
+    --Fire: #F57D31;
+    --Electric: #F9CF30;
+    --Dragon: #7037FF;
+
+    --DrakGray: #212121;
+    --MedGray: #666666;
+    --LightGray: #E0E0E0;
+    --White: #FFFFFF;
+    --Background: #F7F7F7;
+
+
+
+ }
+
+ .Content{
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Background);
+ }
+
+.gridPokemon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--MedGray);
+    padding: 15px;
+    
+}
+
+
+.pokemon{
+    width: 70px;
+    
+} 
+
+.Cards{
+    
+    
+    padding: 5px;
+    
+}
+
+.CardsUp{
+    display: flex;
+    flex-direction: column;
+    border: 2px  solid var(--Grass);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 1px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.CardsDown{
+    border: px solid var(--Grass);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding:10px;
+    background-color: var(--Grass);
+    font: var(--White) ;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.CardsUp .Codigo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    color: var(--Grass)
+
+}
