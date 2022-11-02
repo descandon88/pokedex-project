@@ -40,3 +40,5 @@ let pokemons = [
     id: "304",
   },
 ];
+
+export default pokemons;

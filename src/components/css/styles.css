@@ -1,0 +1,17 @@
+.ul-Cards {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.li-Cards {
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    margin:5px;
+    justify-content: center;
+    align-items:center;
+}
+li.li-Cards > img {
+    width:100px;
+}
