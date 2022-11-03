@@ -8,7 +8,7 @@ function Cards(props) {
     return obj.map((obj, index) => (
       <li className="li-Cards" key={index}>
         <p>{obj.id}</p>
-        <p>imagen</p>
+        <img src={obj.img} style={{ width: "120px" }}></img>
         <p>{obj.nombre}</p>
 
         {/* <p>{obj.img}</p> */}

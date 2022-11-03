@@ -2,7 +2,7 @@ let pokemons = [
   {
     nombre: "Bulbasour",
     id: "001",
-    img: "./img/bulbasaur.png",
+    img: "../public/img/bulbasaur.png",
   },
   {
     nombre: "Charmander",
@@ -15,12 +15,14 @@ let pokemons = [
     img: "./img/squirtle.png",
   },
   {
-    nombre: "Butterfree",
+    nombre: "Yoda",
     id: "012",
+    img: "../public/img/yoda.gif",
   },
   {
     nombre: "Picachu",
     id: "025",
+    img: "../public/img/picachu.png",
   },
   {
     nombre: "Gostly",
@@ -29,6 +31,7 @@ let pokemons = [
   {
     nombre: "Ditto",
     id: "132",
+    img: "../public/img/chewbacca.jpg",
   },
   {
     nombre: "Mew",

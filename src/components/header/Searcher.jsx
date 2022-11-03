@@ -60,24 +60,24 @@ function Searcher(props) {
       } else {
         props.setPokemonDisplay(strAscending);
         console.log(strAscending);
-        setPokemonDisplay(strAscending);
-        if (props.PokemonInput.length === 0) {
-          props.setPokemonDisplay(Datos);
-        }
+        props.setPokemonDisplay(strAscending);
+        // if (props.PokemonInput.length === 0) {
+        //   props.setPokemonDisplay(Datos);
+        // }
       }
-
       setButtonText("A->Z");
     } else {
       const numbAscending = [...obj].sort((a, b) => (a.id > b.id ? 1 : -1));
-      setButtonText("#->");
+
       props.setPokemonDisplay(numbAscending);
-      setPokemonDisplay(numbAscending);
-      if (props.PokemonInput.length === 0) {
-        props.setPokemonDisplay(Datos);
-      }
+      props.setPokemonDisplay(numbAscending);
+      // if (props.PokemonInput.length === 0) {
+      //   props.setPokemonDisplay(Datos);
+      // }
+      setButtonText("#->");
     }
-    // buttonText === "A->Z" ? setButtonText("1->2") : setButtonText("A->Z");
   };
+  // buttonText === "A->Z" ? setButtonText("1->2") : setButtonText("A->Z");
 
   return (
     <div>
@@ -85,12 +85,7 @@ function Searcher(props) {
         type="text"
         placeholder="Search"
         value={props.PokemonInput}
-        onChange={
-          handleSearchTMP
-
-          // props.handleSearchPokemon
-          // PokemonSearch(Datos);
-        }
+        onChange={handleSearchTMP}
         onKeyPress={(e) => PokemonSearch(e, props.DatosApi)}
         // onClick={() => PokemonSearch(LocalData)}
       ></input>
