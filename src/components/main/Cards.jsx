@@ -10,8 +10,6 @@ function Cards(props) {
         <p>{obj.id}</p>
         <img src={obj.img} style={{ width: "120px" }}></img>
         <p>{obj.nombre}</p>
-
-        {/* <p>{obj.img}</p> */}
       </li>
     ));
   };
