@@ -1,0 +1,339 @@
+
+.container {
+    background-color: #74CB48;
+    max-width: 390px;
+    height: 844px;
+    border-radius: 15px;
+    margin: 0px auto 0 auto;
+    color: black;
+    font-size: 14px;
+}
+
+header {
+    height: 270px;
+    border-radius: 25px;
+    
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 42%;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+    background-image: url(../src/components/data/img/Pokeball.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    filter: invert(10) brightness(1.2);
+}
+
+.arrowLeft {
+    filter: invert(10) brightness(1.2);
+    margin-top: 9px;
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 25px 0px 25px;
+}
+
+.h1Header {
+    font-size: 32px;
+    margin-right: 100px;
+    color: white;
+}
+
+.h2Header {
+    font-size: 14px;
+    color: white;
+}
+
+.frame {
+    height: 25px;
+    filter: invert(10) brightness(1.2);
+    float: right;
+    margin-top: 40%;
+    margin-right: 10%;
+}
+
+main {
+    background-color: white;
+    margin: 8px auto 0 auto;
+    border-radius: 15px;
+    height: 560px;
+    width: 97%;
+}
+
+.bulbasaur {
+    margin-top: -180px;
+    width: 250px;
+    position: absolute;
+    margin-left: -130px;
+}
+
+
+button {
+    margin: 70px 8px 8px 8px;
+}
+
+.verde {
+    background-color: #74CB48;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 2px 8px;
+    font-size: 15px
+}
+
+.violeta {
+    background-color: #A43E9E;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 2px 8px;
+    font-size: 15px
+
+}
+
+.title {
+    color: #74CB48;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 15px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto 0 auto;
+    color: black;
+}
+
+.info img {
+    height: 25px;
+}
+
+.weight p {
+    margin-left: 10px;
+}
+
+.height p {
+    margin-left: 10px;
+}
+
+.weight {
+    display: flex;
+    align-items: center;
+    width: 110px;
+    justify-content: center;
+}
+.height {
+    display: flex;
+    align-items: center;
+    width: 110px;
+    justify-content: center;
+}
+
+.moves {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    width: 110px;
+}
+
+.miniTitle {
+    color: rgb(62, 62, 62);
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2%;
+}
+
+.description p{
+    font-size: 100px;
+}
+
+.stats {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    gap: 25px;
+}
+
+.letters {
+    color: #74CB48;
+    font-weight: 700;
+    line-height: 8px;
+}
+
+.numbers{
+    line-height: 8px;
+}
+
+.porcentaje{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.porcentaje1 {
+    background: #e4ffd7;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    display: flex;
+    height: 7px;
+    width: 200px;
+  }
+  
+  .progress1 {
+    animation: load1 3s normal forwards;
+    border-radius: 100px;
+    background: #74CB48;
+    height: 5px;
+    width: 0;
+  }
+  
+  @keyframes load1 {
+    0% { width: 0; }
+    100% { width: 22.5%; }
+  }
+
+.porcentaje2 {
+    background: #e4ffd7;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    display: flex;
+    height: 7px;
+    width: 200px;
+  }
+  
+  .progress2 {
+    animation: load2 3s normal forwards;
+    border-radius: 100px;
+    background: #74CB48;
+    height: 5px;
+    width: 0;
+  }
+  
+  @keyframes load2 {
+    0% { width: 0; }
+    100% { width: 24.5%; }
+  }
+
+.porcentaje3 {
+    background: #e4ffd7;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    display: flex;
+    height: 7px;
+    width: 200px;
+  }
+  
+  .progress3 {
+    animation: load3 3s normal forwards;
+    border-radius: 100px;
+    background: #74CB48;
+    height: 5px;
+    width: 0;
+  }
+  
+  @keyframes load3 {
+    0% { width: 0; }
+    100% { width: 24.5%; }
+  }
+
+.porcentaje4 {
+    background: #e4ffd7;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    display: flex;
+    height: 7px;
+    width: 200px;
+  }
+  
+  .progress4 {
+    animation: load4 3s normal forwards;
+    border-radius: 100px;
+    background: #74CB48;
+    height: 5px;
+    width: 0;
+  }
+  
+  @keyframes load4 {
+    0% { width: 0; }
+    100% { width: 32.5%; }
+  }
+
+.porcentaje5 {
+    background: #e4ffd7;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    display: flex;
+    height: 7px;
+    width: 200px;
+  }
+  
+  .progress5 {
+    animation: load5 3s normal forwards;
+    border-radius: 100px;
+    background: #74CB48;
+    height: 5px;
+    width: 0;
+  }
+  
+  @keyframes load5 {
+    0% { width: 0; }
+    100% { width: 32.5%; }
+  }
+
+.porcentaje6 {
+    background: #e4ffd7;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    display: flex;
+    height: 7px;
+    width: 200px;
+  }
+  
+  .progress6 {
+    animation: load6 3s normal forwards;
+    border-radius: 100px;
+    background: #74CB48;
+    height: 5px;
+    width: 0;
+  }
+  
+  @keyframes load6 {
+    0% { width: 0; }
+    100% { width: 22.5%; }
+  }
