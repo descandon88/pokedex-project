@@ -1,14 +1,12 @@
-import { useState } from "react";
-import "./App.css";
-import Main from "./components/main/Cards";
+import React, { useState } from "react";
+import Parent from "./components/Parent";
 
-function App(){
-  return (<div >
-
-      <Main/>
-     
-
-  </div>);
+function App() {
+  return (
+    <div>
+      <Parent />
+    </div>
+  );
 }
 
 export default App;

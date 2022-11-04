@@ -19,13 +19,18 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 10px 0px 10px;
+    
+    
   
 }
 .button{
-    border: 1px solid #fff;
-    color: #fff;
+    display: flex;
+    align-items: center;
+    border: none;
     height: 35px;
     background-color: transparent;
+    padding: 0px;
+    
 }
 
 .pokeball{
@@ -87,4 +92,12 @@
 }
 b{
     padding-left: 10px;
+}
+
+.lowerside-searcher{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
