@@ -1,26 +1,45 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 
 :root {
     --Rock: #869E31;
+    --RockText: #2E3B00;
     --Ghost: #70559B;
+    --GhostText: #1F0449;
     --Steel: #B7B9D0;
+    --SteelText: #060B4A;
     --Water: #6493EB;
+    --WaterText: #041C47;
     --Grass: #74CB48;
+    --GrassText:#0C2400;
     --Psychic: #FB5584;
+    --PsychicText: #380010;
     --Ice: #9AD6DF;
+    --IceText: #013A42;
     --Dark: #75574C;
+    --DarkText: #6B1D00;
     --Fairy: #E69EAC;
+    --FairyText:#640014;
     --Normal: #AAA67F;
+    --NormalText: #6B6100;
     --Fighting: #C12239;
+    --FightingText: #3B0008;
     --Flying: #A891EC;
+    --FlyingText: #16054A;
     --Poison: #A43E9E;
+    --PoisonText: #470044;
     --Ground: #DEC16B;
+    --GroundText: #6B5000;
     --Bug: #A78723;
+    --BugText: #6B5100;
     --Fire: #F57D31;
+    --FireText: #3E1800;
     --Electric: #F9CF30;
+    --ElectricText: #6B5500;
     --Dragon: #7037FF;
+    --DragonText: #180449;
 
     --DrakGray: #212121;
     --MedGray: #666666;
@@ -32,62 +51,248 @@
 
  }
 
- .Content{
-    align-items: center;
+ .Card{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: var(--Background);
+    width: 100%;
  }
 
-.gridPokemon{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border: 1px solid var(--MedGray);
-    padding: 15px;
-    
-}
 
-
-.pokemon{
-    width: 70px;
-    
+ .pokemon{
+    width: 100px;
+       
 } 
 
-.Cards{
-    
-    
-    padding: 5px;
-    
+#Water{
+    background: linear-gradient(180deg, var(--Background)10%,var(--WaterText) 100%);
+    border-top: 2px  solid var(--Water);
+    border-left: 2px  solid var(--Water);
+    border-right: 2px  solid var(--Water);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--WaterText);
+
 }
 
-.CardsUp{
+#Water2{
+    background-color: var(--Water);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+#Grass{
+    background: linear-gradient(180deg, var(--Background)10%,var(--GrassText) 100%);
+    border-top: 2px  solid var(--Grass);
+    border-left: 2px  solid var(--Grass);
+    border-right: 2px  solid var(--Grass);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--GrassText)
+
+}
+
+#Grass2{
+    background-color: var(--Grass);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+#Fire{
+    background: linear-gradient(180deg, var(--Background)10%,var(--FireText) 100%);
+    border-top: 2px  solid var(--Fire);
+    border-left: 2px  solid var(--Fire);
+    border-right: 2px  solid var(--Fire);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--FireText);
+
+}
+
+#Fire2{
+    background-color: var(--Fire);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+#Flying{
+    background: linear-gradient(180deg, var(--Background)10%,var(--FlyingText) 100%);
+    border-top: 2px  solid var(--Flying);
+    border-left: 2px  solid var(--Flying);
+    border-right: 2px  solid var(--Flying);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--FlyingText) ;
+
+}
+
+#Flying2{
+    background-color: var(--Flying);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+#Electric{
+    background: linear-gradient(180deg, var(--Background)10%,var(--ElectricText) 100%);
+    border-top: 2px  solid var(--Electric);
+    border-left: 2px  solid var(--Electric);
+    border-right: 2px  solid var(--Electric);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--ElectricText);
+
+}
+
+#Electric2{
+    background-color: var(--Electric);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+#Ghost{
+    background: linear-gradient(180deg, var(--Background)10%,var(--GhostText) 100%);
+    border-top: 2px  solid var(--Ghost);
+    border-left: 2px  solid var(--Ghost);
+    border-right: 2px  solid var(--Ghost);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--GhostText);
+
+}
+
+#Ghost2{
+    background-color: var(--Ghost);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+#Normal{
+    background: linear-gradient(180deg, var(--Background)10%,var(--NormalText) 100%);
+    border-top: 2px  solid var(--Normal);
+    border-left: 2px  solid var(--Normal);
+    border-right: 2px  solid var(--Normal);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--NormalText);
+
+}
+
+#Normal2{
+    background-color: var(--Normal);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+#Psychic{
+    background: linear-gradient(180deg, var(--Background)10%,var(--PsychicText) 100%);
+    border-top: 2px  solid var(--Psychic);
+    border-left: 2px  solid var(--Psychic);
+    border-right: 2px  solid var(--Psychic);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--PsychicText);
+
+}
+
+#Psychic2{
+    background-color: var(--Psychic);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+#Steal{
+    background: linear-gradient(180deg, var(--Background)10%,var(--SteelText) 100%);
+    border-top: 2px  solid var(--Steel);
+    border-left: 2px  solid var(--Steel);
+    border-right: 2px  solid var(--Steel);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--SteelText);
+
+}
+
+#Steal2{
+    background-color: var(--Steel);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+ .CardsUp{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: .7rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.CardsBody{
     display: flex;
     flex-direction: column;
-    border: 2px  solid var(--Grass);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    padding: 1px;
-    font-family: 'Poppins', sans-serif;
+    align-items: center;
 
 }
+
 .CardsDown{
-    border: px solid var(--Grass);
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding:10px;
-    background-color: var(--Grass);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px 0px 5px;
     font: var(--White) ;
     font-size: 1rem;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
     
 
 }
 
-.CardsUp .Codigo {
+.number{
+    margin: 15px;
+    font-size: 1rem;
+    
+}
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 10px;
-    color: var(--Grass)
+.ul-Cards {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 0px;
+    list-style: none;
+        
+}
 
+.li-Cards {
+   
+    padding: 5px;
+}
+li.li-Cards > img {
+    width: 100%;
 }

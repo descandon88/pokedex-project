@@ -1,0 +1,11 @@
+.fondo::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../components/data/img/forest.jpg");
+    background-position: -300px;
+    opacity: 0.25;
+    z-index: -1;
+    background-size: cover;
+    }

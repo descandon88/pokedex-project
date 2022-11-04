@@ -1,139 +1,32 @@
-import { dividerClasses } from "@mui/material";
-import React from "react";
-import bulbasaur from "../data/img/bulbasaur.png";
+import React, { useState } from "react";
+import Parent from "../Parent";
 import "../css/styles.css";
 
-
-
-
-
-function Main() {
+function Cards(props) {
+  const PokemonCards = (obj) => {
+    console.log("se imprimen tarjetas" + obj);
+    return obj.map((obj, index) => (
+      <li className="li-Cards" key={index}>
+        <div className="Cards" id={obj.type}>
+          <div className="CardsUp">
+            <p className="number">{"#"+obj.id}</p>
+          </div>
+          <div className="CardsBody" >
+            <img src={obj.img} className="pokemon" ></img>
+          </div>
+          <div className="CardsDown" id={obj.type+"2"}>
+            <p className="pokeName"><b>{obj.nombre}</b></p>
+          </div>
+        </div>
+        {/* <p>{obj.img}</p> */}
+      </li>
+    ));
+  };
   return (
-    <div className="Content">
-    <div className="gridPokemon">
-      <div className="Cards">
-        <div className="CardsUp">
-          <span className="Codigo"> #001</span>
-          <img src={bulbasaur} className="pokemon" />
-        </div>
-        <div className="CardsDown">
-          <span>
-           
-            <b>Bulbasor</b>
-          </span>
-        </div>
-      </div>
-      
-      <div className="Cards">
-        <div className="CardsUp">
-          <span className="Codigo"> #001</span>
-          <img src={bulbasaur} className="pokemon" />
-        </div>
-        <div className="CardsDown">
-          <span>
-          
-            <b>Bulbasor</b>
-          </span>
-        </div>
-      </div>
-
-      <div className="Cards">
-        <div className="CardsUp">
-          <span className="Codigo"> #001</span>
-          <img src={bulbasaur} className="pokemon" />
-        </div>
-        <div className="CardsDown">
-          <span>
-          
-            <b>Bulbasor</b>
-          </span>
-        </div>
-      </div>
-
-      <div className="Cards">
-        <div className="CardsUp">
-          <span className="Codigo"> #001</span>
-          <img src={bulbasaur} className="pokemon" />
-        </div>
-        <div className="CardsDown">
-          <span>
-          
-            <b>Bulbasor</b>
-          </span>
-        </div>
-      </div>
-
-      <div className="Cards">
-        <div className="CardsUp">
-          <span className="Codigo"> #001</span>
-          <img src={bulbasaur} className="pokemon" />
-        </div>
-        <div className="CardsDown">
-          <span>
-          
-            <b>Bulbasor</b>
-          </span>
-        </div>
-      </div>
-
-      <div className="Cards">
-        <div className="CardsUp">
-          <span className="Codigo"> #001</span>
-          <img src={bulbasaur} className="pokemon" />
-        </div>
-        <div className="CardsDown">
-          <span>
-          
-            <b>Bulbasor</b>
-          </span>
-        </div>
-      </div>
-
-      <div className="Cards">
-        <div className="CardsUp">
-          <span className="Codigo"> #001</span>
-          <img src={bulbasaur} className="pokemon" />
-        </div>
-        <div className="CardsDown">
-          <span>
-          
-            <b>Bulbasor</b>
-          </span>
-        </div>
-      </div>
-
-      <div className="Cards">
-        <div className="CardsUp">
-          <span className="Codigo"> #001</span>
-          <img src={bulbasaur} className="pokemon" />
-        </div>
-        <div className="CardsDown">
-          <span>
-          
-            <b>Bulbasor</b>
-          </span>
-        </div>
-      </div>
-
-      <div className="Cards">
-        <div className="CardsUp">
-          <span className="Codigo"> #001</span>
-          <img src={bulbasaur} className="pokemon" />
-        </div>
-        <div className="CardsDown">
-          <span>
-          
-            <b>Bulbasor</b>
-          </span>
-        </div>
-      </div>
-
-      
-
-    </div>
-
+    <div className="Card">
+      <ul className="ul-Cards" >{PokemonCards(props.DatosApi)}</ul>
     </div>
   );
 }
 
-export default Main;
+export default Cards;
