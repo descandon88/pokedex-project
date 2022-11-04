@@ -3,21 +3,25 @@ let pokemons = [
     nombre: "Bulbasour",
     id: "001",
     img: "../public/img/bulbasaur.png",
+    backgroundcolor: "blue",
   },
   {
     nombre: "Charmander",
     id: "004",
     img: "./img/charmander.png",
+    backgroundcolor: "red",
   },
   {
     nombre: "Squirtle",
     id: "007",
     img: "./img/squirtle.png",
+    backgroundcolor: "yellow",
   },
   {
     nombre: "Yoda",
     id: "012",
     img: "../public/img/yoda.gif",
+    backgroundcolor: "pink",
   },
   {
     nombre: "Picachu",

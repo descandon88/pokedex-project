@@ -6,10 +6,25 @@ function Cards(props) {
   const PokemonCards = (obj) => {
     console.log("se imprimen tarjetas" + obj);
     return obj.map((obj, index) => (
-      <li className="li-Cards" key={index}>
-        <p>{obj.id}</p>
-        <img src={obj.img} style={{ width: "120px" }}></img>
-        <p>{obj.nombre}</p>
+      <li
+        className="li-Cards"
+        key={index}
+        style={{ backgroundColor: obj.backgroundcolor }}
+      >
+        {" "}
+        <div className="CardsUp">
+          <span className="Codigo">{obj.id}</span>
+          <img
+            className="pokemon"
+            src={obj.img}
+            style={{ width: "120px" }}
+          ></img>
+        </div>
+        <div className="CardsDown">
+          <span>
+            <b>{obj.nombre}</b>
+          </span>
+        </div>
       </li>
     ));
   };
